@@ -1,0 +1,23 @@
+
+.popular-display {
+    padding: 32px 16px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.display-image {
+    height: 200px;
+}
+
+.display-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & h1, h2, h3 {
+        margin: 0;
+        padding: 0;
+    }
+}

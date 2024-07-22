@@ -1,11 +1,65 @@
-.text-color-green {
-    color: green;
+body {
+    padding: 24px;
 }
 
-.text-color-blue {
-    color: blue;
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.text-color-red {
-    color: red;
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.green {
+    --color: 0, 128, 0;
+}
+
+.blue {
+    --color: 0, 0, 255;
+}
+
+.red {
+    --color: 255, 0, 0;
+}
+
+.black {
+    --color: 10, 10, 10;
+}
+
+.stat-block {
+    color: rgb(var(--color));
+    background-color: rgba(var(--color), 0.1);
+    border: 1px solid rgb(var(--color));
+}
+
+.sales-overview {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+    & .sales-block {
+        flex-grow: 1;
+        flex-basis: 0;
+        aspect-ratio: 1;
+        max-width: 180px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.border-striped {
+    border-style: dashed;
+}
+
+.sort-button-list {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
 }
