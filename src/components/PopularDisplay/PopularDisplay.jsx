@@ -14,7 +14,7 @@ export function PopularDisplay () {
       <div className="display-description">
         <h2 className={'title'}>{getTvName(bestSellingTv)}</h2>
         <h1 className={'price'}>{createPriceTag(bestSellingTv.price)}</h1>
-        <h3 className={'sizeDescription'}>{getScreenSizes(bestSellingTv)}</h3>
+        <p className={'sizeDescription'}>{getScreenSizes(bestSellingTv)}</p>
         <p className="display-options">{getIconTags(bestSellingTv)}</p>
       </div>
     </div>
