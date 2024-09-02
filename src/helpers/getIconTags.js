@@ -1,7 +1,9 @@
-export default function getIconTags(Television) {
+export default function getIconTags(television) {
   let returnString = '';
 
-  for (const option of Television.options) {
+  if (!television.options) return returnString;
+
+  for (const option of television.options) {
     if (option.applicable) {
       returnString += `[check-icon] ${option.name} `;
     }
